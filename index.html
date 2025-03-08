@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Dynamic Web Fundamentals - Svitlana Bradley</title>
+    <meta name="description" content="WDD 231 - Dynamic Web Fundamentals - Svitlana Bradley. Home Page">
+    <meta name="author" content="Svitlana Bradley">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header> 
+        <img class="img-about" src="images/profile.jpg" alt="Profile Picture">
+        <span class="name">Svitlana Bradley</span>
+        <button id="menu"></button>
+    </header>
+        
+    <nav>   
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>              
+            <li><a href="#">Chamber</a></li>
+            <li><a href="https://github.com/svitlanabradley">GitHub Profile</a></li>  
+            <li><a href="www.linkedin.com/in/svitlana-bradley-a87550129">LinkedIn</a></li> 
+        </ul>        
+    </nav>
+    
+
+    <main>
+        <h1>Home</h1>
+        <div class="work-country">
+            <section class="course-work">
+                <h2>Course Work</h2>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </section>
+    
+            <section class="country">  
+                <h2>Kyiv, Ukraine</h2> 
+                <figure>
+                    <img src="images/ukraine_panorama.jpg" alt="Ukraine Panorama">
+                    <figcaption>Ukraine Panorama</figcaption>
+                </figure>
+            </section>
+        </div>
+
+        <section class="certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+            <ul  class="courses-nav">
+                <li><a href="#" class="nav-item active" id="all">All</a></li>
+                <li><a href="#" class="nav-item" id="cse">CSE</a></li>
+                <li><a href="#" class="nav-item" id="wdd">WDD</a></li>
+            </ul>
+
+            <p id="totalCredits"></p>
+
+            <ul id="courseList"></ul>
+        </section>
+        <br>
+    </main>
+
+    <footer>
+        <br>
+        <p class="par">©<span id="currentyear"></span> 🌻Svitlana Bradley🌻Ukraine </p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+@media screen and (min-width: 650px) {
+
+    main {
+        max-width: 1100px;
+    }
+    
+    .img-about {
+        width: 100px;
+    }
+
+    .name {
+        font-size: 36px;
+    }
+    
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .work-country {
+        display: flex;
+        flex: 100% 1;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    section {
+        box-shadow: 0 4px 10px rgba(10, 10, 10, 0.2);
+        border-radius: 5px;
+    }
+
+    .course-work {
+        flex: 100%;
+        margin-right: 10px;
+    }
+
+    .certificate {
+        margin: 0 10px;
+    }
+
+} 

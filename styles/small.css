@@ -1,0 +1,207 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-1: rgba(39, 122, 140, 1); 
+    --color-2: rgba(242, 200, 75, 1); 
+    --color-3: rgba(242, 208, 145, 0.3); 
+    --color-4: rgba(217, 138, 41, 1); 
+    --color-5: rgba(140, 53, 3, 1); 
+}
+
+body {
+    height: 100vh;
+    font-family: "Itim", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    background: var(--color-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.img-about {
+    width: 50px;
+    box-shadow: 0 4px 10px rgba(10, 10, 10, 0.2);
+}
+
+.name {
+    color: var(--color-2);
+    font-size: 24px;
+    padding-left: 20px;
+}
+ 
+nav {
+    background: #223240;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav li {  
+    display: none;
+    text-align: center; 
+    padding: .75rem;   
+    position: relative;
+    transition: all .25s ease;
+    font-size: 20px;
+}
+
+a {
+    color: aliceblue;  
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--color-2);
+    font-size: larger;
+}
+
+header nav a:hover::after {
+    transform: scalex(1);
+}
+
+#menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    border: 0;
+	display: block;
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	color: aliceblue;
+}
+
+#menu::before {
+	content: "≡";
+}
+
+#menu.show::before {
+	content: "✕";
+}
+
+.show li {
+	display: block;
+}
+
+
+main {
+    max-width: fit-content;
+    height: auto;
+    margin: 0 auto;
+}
+
+section {
+    padding: 10px;
+}
+
+h1 {
+    padding: 0 10px;
+}
+
+h2 {
+    color: aliceblue;
+    background-color: var(--color-1);
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.course-work ul {
+    list-style-position: inside;
+    padding: 20px;
+}
+
+.country figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.country img {
+    width: 200px;
+    box-shadow: 0 4px 10px rgba(10, 10, 10, 0.2);
+}
+
+.courses-nav {
+    display: flex;
+    gap: 5px;
+    list-style: none;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.courses-nav li {
+    background: #223240;
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#totalCredits {
+    padding-top: 10px;
+    text-align: center;
+}
+
+#courseList {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+#courseList li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    width: 300px;
+    height: 40px;
+}
+
+.completed {
+    background-color: var(--color-4);
+    border-radius: 5px;
+}
+
+.incompleted {
+    background-color: var(--color-3);
+    color: var(--color-5) !important;
+    border: 1px solid var(--color-4);
+    border-radius: 5px;
+}
+
+footer {
+    color: aliceblue;
+    height: 100px;
+    background: var(--color-1);
+    padding: 1rem;
+    text-align: center;  
+}
+
+.par {
+    font-size: 20px;
+}
+ 
+#lastModified {
+    color: var(--color-2);
+}
