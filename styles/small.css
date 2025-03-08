@@ -68,9 +68,6 @@ nav a:hover {
     font-size: larger;
 }
 
-header nav a:hover::after {
-    transform: scalex(1);
-}
 
 #menu {
     position: absolute;
