@@ -1,0 +1,42 @@
+@media screen and (min-width: 650px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        padding: 20px 40px;
+    }
+    
+    #menu {
+        display: none;
+    }
+
+    ul.navigation, ul.navigation.show {
+        display: flex;
+    }
+
+    nav {
+        grid-template-rows: 1fr;
+    }
+
+    #theme {
+        position: relative;
+        align-self: flex-start;
+    }
+    
+    .list section {
+        display: grid;
+	    grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .member-card p {
+        padding: 5px 0;
+        font-size:medium;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
