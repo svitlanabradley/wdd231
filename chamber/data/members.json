@@ -6,15 +6,15 @@
             "phone": "0800750403",
             "website": "https://lvivcroissants.com",
             "imageurl": "https://lvivcroissants.com/ua/wp-content/uploads/sites/3/2021/11/logo.svg",
-            "level": 3
+            "level": "Gold"
         },
         {
             "name": "Kapitel",
             "address": "79066, Львів, вул. Івана Пулюя, 40",
             "phone": "+380(67)826-68-99",
             "website": "https://kapitel.lviv.ua",
-            "imageurl": "https://zaxid.net/resources/catalog/photos/company/201903/515695b79892-b7c6-4f07-9d65-1ee47a1007ee.png?v=20230307121557",
-            "level": 2
+            "imageurl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7_f9BxRe6T578e_VxYajvkK_aUpHDm8LSjw&s",
+            "level": "Silver"
         },
         {
             "name": "Kvitna",
@@ -22,7 +22,7 @@
             "phone": "+38 (068) 2960995",
             "website": "https://kvitna.ua/",
             "imageurl": "https://zaxid.net/resources/catalog/photos/company/202108/19199.jpg?v=20230307121557",
-            "level": 1
+            "level": "Gold"
         },
         {
             "name": "Compas Agency",
@@ -30,7 +30,7 @@
             "phone": "+380 96 406 08 96",
             "website": "https://compas.agency/",
             "imageurl": "https://zaxid.net/resources/catalog/photos/company/202503/19237.jpg?v=20250310133835",
-            "level": 2
+            "level": "Silver"
         },
         {
             "name": "Lounge",
@@ -38,7 +38,7 @@
             "phone": "+380(96)648-84-9",
             "website": "http://www.slounge.me/",
             "imageurl": "https://zaxid.net/resources/catalog/photos/company/201903/16248ccbd50dd-49f6-41e6-b440-f2a1d0ae7a81.png?v=20230307121557",
-            "level": 1
+            "level": "Gold"
         },
         {
             "name": "MeDis",
@@ -46,7 +46,7 @@
             "phone": "0800 501750",
             "website": "https://medis.doctor/",
             "imageurl": "https://zaxid.net/resources/catalog/photos/company/201903/9788.jpg?v=20240806125512",
-            "level": 2
+            "level": "Silver"
         },
         {
             "name": "SolidHome",
@@ -54,7 +54,7 @@
             "phone": "+380(63)268-52-28",
             "website": "https://solidhome.com.ua/",
             "imageurl": "https://zaxid.net/resources/catalog/photos/company/201903/1857ffda14bb-77ee-467a-b3a3-bab07c97e67b.png?v=20230307121557",
-            "level": 3
+            "level": "Bronze"
         }
 
     ]

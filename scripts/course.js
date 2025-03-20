@@ -120,3 +120,19 @@ const creditsContainer = document.getElementById("totalCredits");
 creditsContainer.textContent = "Total Credits: 0";
 
 createCourseList(courses);
+
+
+
+const navItems = document.querySelectorAll('.nav-item');
+
+navItems.forEach(item => {
+    item.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        // Remove "active" class from the currently active item
+        document.querySelector('.nav-item.active')?.classList.remove('active');
+
+        // Add "active" class to the clicked item
+        item.classList.add('active');
+    });
+});

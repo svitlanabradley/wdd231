@@ -68,6 +68,9 @@ nav a:hover {
     font-size: larger;
 }
 
+.active {
+    color: var(--color-2);
+}
 
 #menu {
     position: absolute;
@@ -170,7 +173,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: aliceblue;
+    /* color: aliceblue; */
     width: 300px;
     height: 40px;
 }
@@ -199,6 +202,3 @@ footer {
     font-size: 20px;
 }
  
-#lastModified {
-    color: var(--color-2);
-}

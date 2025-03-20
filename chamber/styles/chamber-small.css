@@ -1,5 +1,4 @@
 :root {
-    --color-light-blue: #4686db6b;
     --color-blue: #003366;
     --color-white: #f0f8ff;
 }
@@ -19,7 +18,7 @@ header {
     background-color: var(--color-light-blue);
     display: grid;
     margin: 0 auto;
-    padding: 20px; 
+    padding: 10px 20px; 
 }
 
 h1 {
@@ -46,7 +45,7 @@ button {
 }
 
 .logo img {
-    width: 100px;
+    width: 60px;
 }
 
 ul.navigation li a {
@@ -117,10 +116,6 @@ nav a:hover {
 }
 
 
-
-main {
-    padding: 0 10px 20px;
-}
 
 .view {
     padding: 10px;
