@@ -8,7 +8,6 @@ const myTemp = document.querySelector('#temp');
 const myIcon = document.querySelector('#icon');
 const myHigh = document.querySelector('#high');
 const myLow = document.querySelector('#low');
-// const myHumidity = document.querySelector('#humidity');
 const mySunrise = document.querySelector('#sunrise');
 const mySunset = document.querySelector('#sunset');
 const forecast = document.querySelector('#forecast');
