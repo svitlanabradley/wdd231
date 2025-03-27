@@ -106,7 +106,7 @@ function createCourseList(filteredCourses) {
         const li = document.createElement("li");
         li.innerHTML = `${course.subject} ${course.number}`;
         li.classList.add("course", course.completed ? "completed" : "incompleted");
-
+        li.addEventListener('click', () => showInfo(course))
         document.querySelector("#courseList").appendChild(li);
     });
 
@@ -136,3 +136,22 @@ navItems.forEach(item => {
         item.classList.add('active');
     });
 });
+
+
+//-------DIALOG--------
+const courseDetails = document.querySelector("#course-details");
+const subject = document.querySelector("#course-details h2");
+const title = document.querySelector("#course-details h3");
+const info = document.querySelector("#course-details p");
+const close = document.querySelector("#course-details button");
+close.addEventListener("click", () => courseDetails.close());
+
+// ------- LOOP THROUGH THE ARRAY OF JSON ITEMS
+function showInfo(course) {
+   subject.innerHTML = `${course.subject} ${course.number}`
+   title.innerHTML = course.title
+   info.innerHTML = `<br>${course.credits}credits<br><br>Certificate: ${course.certificate}<br><br>${course.description}<br><br>Technology: ${course.technology}`
+   courseDetails.showModal()
+}
+
+// displayItems(courses)

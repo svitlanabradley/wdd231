@@ -1,0 +1,162 @@
+.frm {
+    width: 300px;
+    background-color: lightgray;
+    padding: 1rem;
+    font-size: .9rem;
+    border-radius: 6px;
+    margin: 0 10px;
+}
+
+.frm label {
+    display: block;
+    padding-top: 1rem;
+    color: #003366;
+    font-size: .9rem;
+}
+
+
+.frm input[type="text"],
+.frm input[type="tel"],
+.frm input[type="email"],
+.frm select,
+.frm textarea{
+    background-color: #eee;
+    display: block; 
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.frm input[type="submit"] {
+    border: none;
+    background: linear-gradient(to right, #0e7dc2 0, #00b7a3 100%);
+    color: #fff;
+    border-radius: 6px;
+    padding: 0.8rem;
+    width: 100%;
+    max-width: 400px;
+    margin: 2rem 0;
+    box-shadow: 1px 1px 4px #999;
+    cursor: pointer;
+}
+
+.frm input:required {
+    border-left: solid 8px red;
+}
+
+.frm input:required:valid {
+    border-left: solid 8px green;
+}
+
+.membership-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 10px;
+}
+
+.card {
+    width: 300px;
+    background-color: #f0f0f0;
+    border-radius: 6px;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInStagger 0.6s ease-out forwards;
+}
+
+#np-card { animation-delay: 0.4s; }
+#bronze-card { animation-delay: 0.6s; }
+#silver-card { animation-delay: 0.8s; }
+#gold-card { animation-delay: 1s; }
+
+@keyframes fadeInStagger {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.card button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.card button:hover {
+    background-color: #0056b3;
+}
+
+#modal-content {
+    box-shadow: 0 0 3rem #777;
+    width: fit-content;
+    border: 1px;
+}
+
+#modal-content div {
+    padding: 5px;
+}
+
+#modal-content div h3 {
+    padding-bottom: 10px;
+}
+
+#modal-content div ul li {
+    list-style: circle;
+    list-style-position: inside;
+}
+
+#closeButton {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+::backdrop {
+    background-color: rgba(255, 255, 255, .75);
+}
+
+#info {
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 650px) {
+    .join-page {
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+    }
+
+    .frm {
+        width: 420px;
+    }
+
+    .card {
+        width: 420px;
+    }
+
+    #modal-content {
+        top: 50%;
+        left: 50%;
+    }
+}

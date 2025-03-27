@@ -17,16 +17,15 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/chamber-small.css">
     <link rel="stylesheet" href="styles/chamber-large.css">
-    <link rel="stylesheet" href="styles/weather.css">
-    <link rel="stylesheet" href="styles/home-page.css">
-
+    <link rel="stylesheet" href="styles/thankyou.css">
 
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/members.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+ 
+
 </head>
-<body class="home-page">
+<body>
     <header>
         <div class="logo">
             <img src="images/apple-touch-icon.png" alt="Lviv Chamber of Commerce Logo">
@@ -46,52 +45,11 @@
         </nav>
         <button id="theme"></button>
     </header>
-    <main class="main-home">
+    <main>
+        <div id="info"></div>
+        <br>
+        <p>Need to update your information? <a href="index.html">Go back</a></p>
 
-        <section class="hero">
-            <picture>
-                <source srcset="images/hero_img.webp" media="(min-width:500px)">
-                <img src="images/hero_img_small.webp" alt="Lviv Chamber of Commerce Hero Image" loading="lazy" width="500" height="250">
-            </picture>
-            
-            <div class="offer">
-                <h2>Lviv</h2>
-                <h2>Chamber of Commerce</h2>
-                <p>We are dedicated to serving the business community of  our area.</p> 
-                <a href="#" id="joinButton">Join the Chamber</a>
-            </div>
-        </section>
-        <h1>Home</h1>
-        <section class="events-weather">
-            <div class="widget events">
-                <h2>Events</h2>
-            </div>
-
-            <div class="widget"> 
-                <h2>Current Weather</h2>        
-                <img id="icon">
-                <h3 id="temp"></h3>
-                <p id="descr"></p>
-                <div class="divider"></div>
-                <div class="line">
-                    <p id="high"></p>
-                    <p id="low"></p>
-                </div>
-                
-                <div class="line">
-                    <p id="sunrise"></p>
-                    <p id="sunset"></p>
-                </div>
-        
-                <div class="divider"></div>
-            </div>   
-            <div class="forecast widget" id="forecast">
-                <h2>Weather Forecast</h2>
-                <br>
-            </div>    
-        </section>
-
-        <section id="spotlight" class="spotlight-container"></section>
     </main>
     <footer>
         <div>
