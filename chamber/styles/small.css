@@ -14,8 +14,12 @@ body {
 	font-family: "Rubik", sans-serif;
 }
 
+main {
+    background: linear-gradient(to right, rgb(14, 125, 194, .3) 0, rgb(0, 184, 162, .3) 100%);
+    padding-bottom: 40px;
+}
+
 header {
-    background-color: var(--color-light-blue);
     display: grid;
     margin: 0 auto;
     padding: 10px 20px; 
@@ -61,7 +65,7 @@ ul.navigation {
 }
 
 
-#theme, #menu {
+#light-dark, #menu {
     display: block;
     font-size: 2rem;
     padding: 0.25rem 2vw;
@@ -95,20 +99,20 @@ nav.show {
     grid-template-rows: 1fr;
 }
 
-#theme {
+#light-dark {
     right: 30px;
 }
 
-#theme::before {
+#light-dark::before {
     content: "◐";
 }
 
-.active {
+nav a:hover {
     background-color: var(--color-blue);
     color: aliceblue;
 }
 
-nav a:hover {
+.active {
     font-weight: 600;
     text-decoration: underline 2px;
     text-underline-offset: 5px;
@@ -138,15 +142,23 @@ main h1 {
 .list {
     display: flex;
     flex-direction: column;
+    margin: 0;
+    padding: 20px;
 }
 
-.list section {
-    
+.list section { 
+    display: flex;
+	margin: 0;
+	padding: 0.25rem;
+}
+.divider {
+    display: none;
+}
+
+.list .member-card .info div{
     display: flex;
 	flex-direction: row;
     flex-wrap: wrap;
-	margin: 0;
-	padding: 0.25rem;
 }
 
 .list section > * {
@@ -167,6 +179,7 @@ main h1 {
     margin: 0 auto;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #fff;
     padding: 1rem;
 }
 
@@ -184,10 +197,81 @@ main h1 {
 }
 
 
+#interests div {
+    margin: 1rem 8px;
+    border: 1px solid #999;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+    overflow: hidden;
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "photo"
+    "description"
+    "address"
+    "button";
+}
+
+#interests div h2 {
+    margin: 1rem 10px;
+    grid-area: name;
+}
+
+#interests div img {
+    width: 100%;
+    height: auto;
+    grid-area: photo;
+}
+
+#interests div p {
+    margin: 1rem 10px;
+    grid-area: description;
+}
+
+#interests div address {
+    margin: 1rem 10px;
+    grid-area: address;
+}
+
+#interests div button {
+    grid-area: button;
+}
+
+#messageBox {
+    margin: 1rem 8px;
+    background: #f8f9fa;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 300px;
+    margin-bottom: 20px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#closeBtn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #888;
+}
+
+#closeBtn:hover {
+    color: #000;
+}
 
 footer {
     padding: 10px;
-    background-color: var(--color-light-blue);
+}
+
+footer img {
+    width: 40px;
+    height: 40px;
 }
 
 footer div {

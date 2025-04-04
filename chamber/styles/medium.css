@@ -1,0 +1,13 @@
+@media only screen and (min-width: 38rem){
+    #interests div {
+        grid-template-areas: 
+        "photo name"
+        "photo description"
+        "photo address"
+        "photo button";
+    }
+
+    #interests div img:hover {
+        filter: blur(2px);
+    }
+}

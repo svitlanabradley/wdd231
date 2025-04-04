@@ -3,6 +3,7 @@
 
 .widget {
     box-shadow: 0 4px 10px rgba(10, 10, 10, 0.2);
+    background-color: #fff;
     color: #003366;
     padding: 10px;
     border-radius: 5px;

@@ -1,4 +1,4 @@
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 64rem) {
 
     header {
         display: flex;
@@ -32,6 +32,11 @@
     .member-card p {
         padding: 5px 0;
         font-size:medium;
+    }
+
+    #interests {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     footer {
