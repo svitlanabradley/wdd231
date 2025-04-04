@@ -1,0 +1,49 @@
+:root {
+    --color-muted-olive: #77997b;
+    --color-light-green: #b8bfae;
+    --color-light-olive: #d7d9d2;
+    --color-light-gray: #f2f2f2;
+}
+
+body {
+    font-family: "Lato", serif;
+}
+
+main {
+    margin: 0 auto;
+    width: 800px;
+}
+
+h1, h2 {
+    font-family: "Philosopher", serif;
+    color: var(--color-muted-olive);
+}
+
+h3 { 
+    font-family: "Philosopher", serif;
+}
+
+.color-schema {
+    display: flex;
+}
+
+.color1 {
+    background-color: var(--color-muted-olive);
+    padding: 20px;
+}
+.color2 {
+    background-color: var(--color-light-green);
+    padding: 20px;
+}
+.color3 {
+    background-color: var(--color-light-olive);
+    padding: 20px;
+}
+.color4 {
+    background-color: var(--color-light-gray);
+    padding: 20px;
+}
+
+.wireframe img {
+    padding: 0 40px;
+}
