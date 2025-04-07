@@ -1,0 +1,120 @@
+
+/* ============================
+   Media Query for Screen Size: 500px and above
+   ============================ */
+@media screen and (min-width: 500px) {
+
+    /* General Body Styling */
+    body {
+        margin: 0 auto;
+    }
+    
+    /* Header and Footer Styling */
+    header, footer {
+        display: flex; /* Use flexbox for layout */
+        align-items: center; /* Center items vertically */
+        justify-content: space-around; /* Space items evenly horizontally */
+    }
+
+    /* Navigation Styles */
+    nav ul {
+        display: flex; /* Display navigation links in a row */
+        flex-direction: row; /* Align navigation links horizontally */
+    }
+
+    /* Navigation Link Styles */
+    nav a {
+        display: block;
+        flex: 1 1 100%;
+        padding: 10px 20px;
+    }
+
+    /* Hide Menu Icon on Larger Screens */
+    #menu {
+        display: none; /* Hides the menu on larger screens */
+    }
+    
+
+    /* Main Section Layout */
+    main div {
+        display: flex;
+        flex-wrap: wrap; /* Allow the items to wrap on smaller screens */
+        justify-content: center; /* Center the items horizontally */
+      }
+
+    /* Class Card Styling (for individual classes) */
+    .class-card {
+        background-color: var(--color-light-gray);
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 20px;
+        width: 600px; /* Set fixed width for class cards */
+    }
+
+    /* Class Card Image Styling */
+    .class-card img {
+        width: 100%; /* Make the image stretch to fill the card */
+        height: 350px; /* Set a fixed height for the image */
+    }
+
+    /* Class Card Button Styling */
+    .class-card a {
+        border: 1px solid var(--color-light-green);
+        border-radius: 30px;
+        padding: 10px 20px;
+        font-weight: 600;
+        width: 300px;
+        text-align: center;
+        margin: 10px auto;
+        transition: all .25s ease; /* Smooth transition for hover effect */
+    }
+
+    /* Button Hover Effect */
+    .class-card a:hover {
+        background: var(--color-muted-olive);
+        color: var(--color-light-gray);
+    }
+
+    /* Class Details Section */
+    .class-details {
+        text-align: left;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+     /* Contacts Section Styling */
+    .main-contacts {
+        background-color: var(--color-light-gray);
+        justify-content: space-around;
+    }
+
+    /* Contact Information Layout */
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Align items to the left */
+        gap: 5px;
+    }
+
+    /* Remove Underlines from Contact Links */
+    .contact a {
+        text-decoration: none;
+    }
+
+    /* Google Map Embed Styling */
+    .main-contacts iframe {
+        border: none;
+        border-radius: 30px;
+        margin: 40px;
+    }
+
+    /* Contact Icon Styling */
+    .main-contacts img {
+        width: 22px;
+        padding-right: 5px;
+    }
+
+}

@@ -1,0 +1,61 @@
+/* ============================
+   General Styles
+   ============================ */
+body {
+    margin: 0 auto; /* Centers the body content horizontally */
+}
+
+/* ============================
+   Header and Footer Layout
+   ============================ */
+header, footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* ============================
+   Navigation Styling
+   ============================ */
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav a {
+    display: block;
+    flex: 1 1 100%;
+    padding: 10px 20px;
+}
+
+/* ============================
+   Menu Button Visibility
+   ============================ */
+#menu {
+    display: none;
+}
+
+/* ============================
+   Class Card Styles
+   ============================ */
+.class-card {
+    background-color: var(--color-light-green);
+    display: flex;
+    padding: 10px;
+}
+
+.class-card img {
+    width: 400px;
+    height: auto;
+}
+
+/* ============================
+   Class Details Section
+   ============================ */
+.class-details {
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

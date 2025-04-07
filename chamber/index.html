@@ -1,41 +1,66 @@
 <!DOCTYPE html>
+<!-- Declares the document type and version of HTML -->
 <html lang="en">
+<!-- Sets the language of the document to English -->
 <head>
+    <!-- Character encoding for proper text rendering -->
     <meta charset="UTF-8">
+
+    <!-- Makes the website responsive on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title shown in the browser tab -->
     <title>Directory Page Lviv Chamber of Commerce</title>
+    
+    <!-- SEO description for search engines -->
     <meta name="description" content="Lviv Chamber of Commerce & Industry – your trusted partner in business development, networking, international trade, and investment opportunities in Ukraine.">
+
+    <!-- Author meta tag -->
     <meta name="author" content="Svitlana Bradley">
+
+    
     <meta property="og:title" content="Lviv Chamber of Commerce & Industry - Business & Trade Hub">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://img.freepik.com/free-photo/business-people-investing-startup-buiness_53876-14766.jpg?t=st=1741963068~exp=1741966668~hmac=66ccfc6429d1575017d3fdf5443abad26c345c62c080b6f7b6da9c602c68761a&w=1380">
     <meta property="og:url" content="https://svitlanabradley.github.io/wdd231/chamber/directory.html">
+    
+    <!-- Preloading and importing Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <!-- Favicon for browser tab -->
     <link rel="icon" href="images/favicon.ico">
+
+    <!-- Stylesheets for resetting default browser styles and custom styling -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="styles/weather.css">
     <link rel="stylesheet" href="styles/home-page.css">
 
-
+    <!-- JavaScript files for interactivity, deferred for performance -->
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/weather.js" defer></script>
     <script src="scripts/members.js" defer></script>
 </head>
 <body class="home-page">
+    <!-- Website Header -->
     <header>
         <div class="logo">
+            <!-- Site logo image -->
             <img src="images/apple-touch-icon.png" alt="Lviv Chamber of Commerce Logo">
             <div>
                 <h1>Lviv</h1>
                 <p>Chamber of Commerce</p>
             </div>
         </div>
+
+        <!-- Hamburger menu for mobile navigation -->
         <button id="menu"></button>
+
+        <!-- Navigation bar -->
         <nav id="animateme">
             <ul class="navigation">
                 <li><a href="index.html" class="nav-item active">Home</a></li>
@@ -44,13 +69,20 @@
                 <li><a href="discover.html" class="nav-item">Discover</a></li>
             </ul>
         </nav>
+
+        <!-- Light/Dark mode toggle -->
         <button id="light-dark"></button>
     </header>
+
+    <!-- Main content -->
     <main class="main-home">
 
+        <!-- Hero section with image and call-to-action -->
         <section class="hero">
             <picture>
+                <!-- Larger image for wider screens -->
                 <source srcset="images/hero_img.webp" media="(min-width:500px)">
+                <!-- Default fallback image -->
                 <img src="images/hero_img_small.webp" alt="Lviv Chamber of Commerce Hero Image" loading="lazy" width="500" height="250">
             </picture>
             
@@ -58,24 +90,31 @@
                 <h2>Lviv</h2>
                 <h2>Chamber of Commerce</h2>
                 <p>We are dedicated to serving the business community of  our area.</p> 
-                <a href="#" id="joinButton">Join the Chamber</a>
+                <!-- CTA button to join the chamber -->
+                <a href="join.html" id="joinButton">Join the Chamber</a>
             </div>
         </section>
+
+        <!-- Page Title -->
         <h1>Home</h1>
+
+        <!-- Section for events and weather -->
         <section class="events-weather">
+            <!-- Placeholder for event content -->
             <div class="widget events">
                 <h2>Events</h2>
             </div>
 
+            <!-- Current weather widget -->
             <div class="widget"> 
                 <h2>Current Weather</h2>        
-                <img id="icon">
-                <h3 id="temp"></h3>
-                <p id="descr"></p>
+                <img id="icon">  <!-- Weather icon -->
+                <h3 id="temp"></h3> <!-- Temperature -->
+                <p id="descr"></p>  <!-- Weather description -->
                 <div class="divider"></div>
                 <div class="line">
-                    <p id="high"></p>
-                    <p id="low"></p>
+                    <p id="high"></p> <!-- High temperature -->
+                    <p id="low"></p> <!-- Low temperature -->
                 </div>
                 
                 <div class="line">
@@ -85,14 +124,19 @@
         
                 <div class="divider"></div>
             </div>   
+
+            <!-- Forecast container, will be filled by JS -->
             <div class="forecast widget" id="forecast">
                 <h2>Weather Forecast</h2>
                 <br>
             </div>    
         </section>
 
+        <!-- Spotlight section for featured members (filled dynamically) -->
         <section id="spotlight" class="spotlight-container"></section>
     </main>
+
+    <!-- Footer with contact info and social media -->
     <footer>
         <div>
             <h2>Lviv Chamber of Commerce</h2>
@@ -103,12 +147,14 @@
             <p>(+38) 123-45-67</p>
         </div>
 
+        <!-- Social media icons/links -->
         <div>
             <a href="youtube.com"><img src="images/youtube_icon.png" alt="Youtube Icon"></a>
             <a href="twitter.com"><img src="images/twitter_icon.png" alt="Twitter Icon"></a>
             <a href="linkedin.com"><img src="images/linkedin_icon.png" alt="LinkedIn Icon"></a>
         </div>
 
+        <!-- Footer credits and last modified date -->
         <div>
             <p>WDD231 Class Project</p>
             <p>Svitlana Bradley</p>

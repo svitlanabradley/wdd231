@@ -1,0 +1,158 @@
+<!-- Declares the document type and version of HTML -->
+<!DOCTYPE html>
+<!-- Sets the language of the document to English -->
+<html lang="en">
+<head>
+
+    <!-- Character encoding for proper text rendering -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the website responsive on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title shown in the browser tab -->
+    <title>Yoga Time Studio | Find Your Balance</title>
+
+    <!-- SEO description for search engines -->
+    <meta name="description" content="Welcome to Yoga Time Studio – your space for mindfulness, movement, and relaxation. Explore our yoga classes and start your journey today!">
+
+    <!-- Author meta tag -->
+    <meta name="author" content="Svitlana Bradley">
+
+    <!-- Open Graph tags for rich link previews on social media -->
+    <meta property="og:title" content="Yoga Time Studio – Find Your Balance">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://svitlanabradley.github.io/wdd231/yogatime/images/yoga-studio-hero.webp">
+    <meta property="og:url" content="https://svitlanabradley.github.io/wdd231/yoga-studio/index.html">
+    <meta property="og:description" content="Join Yoga Time Studio to reconnect with your mind, body, and soul. Explore our peaceful space and find your flow. First class is free!">
+
+
+    <!-- Preloading and importing Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon for browser tab -->
+    <link rel="icon" href="images/yogatime-favicon.ico">
+
+    <!-- Stylesheets for resetting default browser styles and custom styling -->
+    <link rel="stylesheet" href="styles/yogatime-header-footer.css">
+    <link rel="stylesheet" href="styles/yogatime-main-home.css">
+
+    <!-- JavaScript files for interactivity, deferred for performance -->
+    <script src="scripts/yogatime.js" defer></script>   
+</head>
+
+<body class="home-page">
+    <!-- Website Header -->
+    <header>
+        <a href="#"><h1>YOGA TIME</h1></a>
+        <button id="menu" aria-label="Toggle navigation menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-home">
+        <!-- Hero Section -->
+        <section class="hero">
+            <picture>
+                <source srcset="images/yoga-studio-hero.webp" media="(min-width: 500px)">
+                <img src="images/yoga-studio-hero-small.webp" alt="Yoga Studio Hero Image" loading="lazy" width="500" height="250">
+            </picture>
+            <div class="offer">
+                <h2>Your journey. Your space. Your peace.</h2>
+                <p>Our classes welcome all levels, <br>offering a space to grow, explore, and find balance — <br>wherever you are on your yoga journey.</p>
+                <br>
+                <br>
+                <a href="#free-session" id="bookSessionButton">Book Your Free Session</a>
+            </div>
+        </section>
+
+        <!-- Yoga Classes Section -->
+        <section>
+            <h2>Classes for Every Mood and Goal</h2>
+            <div class="classes">
+                <figure class="image-container"  id="img1">
+                    <img src="images/img1.webp" alt="Hatha Yoga" loading="lazy">
+                    <figcaption>Hatha Yoga <br> Gentle and traditional</figcaption>
+                </figure>
+                <figure class="image-container" id="img2">
+                    <img src="images/img2.webp" alt="Kundalini Yoga" loading="lazy">
+                    <figcaption>Kundalini Yoga <br> Spiritual and energetic</figcaption>
+                </figure>
+                <figure class="image-container" id="img3">
+                    <img src="images/img3.webp" alt="Yin Yoga" loading="lazy">
+                    <figcaption>Yin Yoga <br> Slow, deep stretching</figcaption>
+                </figure>
+                <figure class="image-container" id="img4">
+                    <img src="images/img4.webp" alt="Vinyasa Yoga" loading="lazy">
+                    <figcaption>Vinyasa Yoga <br> Flow-based practice</figcaption>
+                </figure>
+            </div>
+        </section>
+        <br>
+
+        <!-- Free Session Section -->
+        <section id="free-session" class="free-session">
+            <h2>Free Session</h2>
+            <p>Your first class in the studio is free. <br> Fill out the form and we will contact you shortly.</p>
+            <br>
+
+            <div class="main-form-img">
+                <div class="form-img">
+                    <form method="get" action="thanks.html">
+                        <label>Name*<input type="text" name="name" placeholder="Svitlana" required></label>
+                        <label>Phone*<input type="tel" name="phone" placeholder="+380(__) ___ __ __" required></label>
+                        <label>E-mail<input type="email" name="email" placeholder="yogatime@gmail.com" required></label>
+                        <label>Select Your Yoga Class:* 
+                            <select name="yogaClass" id="yogaClassSelect" required> 
+                                <option value="">Choose a class...</option>
+                            </select>
+                        </label>
+                        <br>
+                        <br>
+                        <input type="submit" value="Post Submition">
+                    </form>
+                    
+                </div>
+                <img src="images/mudra-hand-position.webp" alt="">
+            </div>
+            <br> 
+
+        </section>
+    </main> 
+
+    <footer>
+        <div class="footer-navigation">
+            <h1>YOGA TIME</h1>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="classes.html">Classes</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Social Links -->
+        <div class="sociallinks">
+            <a href="https://facebook.com">
+                    <img src="images/facebook_icon.png" alt="Facebook">
+                </a>
+            <a href="https://whatsapp.com">
+                    <img src="images/whatsapp_icon.png" alt="Whatsapp">
+                </a>
+            <a href="https://instagram.com">
+                    <img src="images/instagram_icon.png" alt="Instagram">
+            </a>
+        </div>
+
+        <p>&copy; 2025 | Svitlana Bradley</p>
+    </footer>
+</body>
+</html>
