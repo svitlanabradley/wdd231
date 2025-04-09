@@ -14,6 +14,7 @@ function displayItems(interests) {
     const thePhoto =  document.createElement('img')
     thePhoto.src = `${interest.image}`
     thePhoto.alt = interest.name
+    thePhoto.loading = "lazy"
     theCard.appendChild(thePhoto)
     //build the title element
     const theTitle = document.createElement('h2')

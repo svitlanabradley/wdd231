@@ -1,0 +1,31 @@
+
+ /* ============================
+   Responsive Design (Larger Screens)
+   ============================ */
+@media only screen and (min-width: 64rem) {
+
+    /* Hero Section */
+    .hero img {
+        position: relative;
+    }
+
+    .offer {
+        position: absolute;
+        top: 140px;
+        left: 80px;
+        text-align: left;
+        padding: 40px;
+    }
+
+    .offer a {
+        text-align: center;
+        margin: 0;
+    }
+
+    #classesContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
