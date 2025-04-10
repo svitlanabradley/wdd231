@@ -23,6 +23,10 @@ h3 {
     font-family: "Philosopher", serif;
 }
 
+.scenarios {
+    background-color: var(--color-light-gray);
+}
+
 .color-schema {
     display: flex;
 }
