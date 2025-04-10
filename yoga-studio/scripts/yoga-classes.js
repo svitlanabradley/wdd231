@@ -15,8 +15,7 @@ async function fetchClasses() {
           <h2>${cls.className}</h2>
           <p>${cls.description}</p>
           <p class="details"><strong>${cls.level} <br> ${cls.duration} <br> ${cls.instructor} <br> ${cls.schedule}</strong></p>
-          <a>Book Your Free Session</a>
-          
+          <a href="index.html#free-session" class="book-button" data-class-id="${cls.id}">Book Your Free Session</a>
         `;
   
         container.appendChild(card);

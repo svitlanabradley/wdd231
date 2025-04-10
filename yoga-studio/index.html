@@ -42,7 +42,11 @@
     <link rel="stylesheet" href="styles/large.css">
 
     <!-- JavaScript files for interactivity, deferred for performance -->
-    <script src="scripts/yogatime.js" defer></script>   
+    <script src="scripts/reviews.js" type="module"></script> 
+    <script src="scripts/yogatime.js" defer></script> 
+    <script src="scripts/select-options.js" defer></script> 
+    <script src="scripts/weather.js" defer></script>
+
 </head>
 
 <body class="home-page">
@@ -57,6 +61,30 @@
                 <li><a href="contacts.html">Contacts</a></li>
             </ul>
         </nav>
+
+        <button id="openButton">
+            <img id="icon" alt="Weather Icon" title="Current">
+            <!-- <h3 id="temp"></h3> -->
+        </button>
+        <dialog id="modal-content">
+            <!-- Current weather widget -->
+            <div> 
+                <h2>Current Weather</h2>        
+                <h3 id="temp"></h3> <!-- Temperature -->
+                <p id="descr"></p>  <!-- Weather description -->
+                <div class="divider"></div>
+                <div class="line">
+                    <p id="high"></p> <!-- High temperature -->
+                    <p id="low"></p> <!-- Low temperature -->
+                </div>
+                
+                <div class="line">
+                    <p id="sunrise"></p>
+                    <p id="sunset"></p>
+                </div>
+            </div>
+            <button id="closeButton">&times;</button>
+        </dialog>
     </header>
 
     <main class="main-home">
@@ -106,7 +134,7 @@
             <br>
 
             <div class="main-form-img">
-                <img src="images/meditating-mat.webp" alt="">
+                <img src="images/meditating-mat.webp" alt="meditation image" loading="lazy">
                 <div class="form-img">
                     <form method="get" action="thanks.html">
                         <label>Name*<input type="text" name="name" placeholder="Svitlana" required></label>
@@ -120,14 +148,19 @@
                         <br>
                         <br>
                         <input type="submit" value="Post Submition">
-                    </form>
-                    
-                </div>
-                
+                    </form>   
+                </div>                
             </div>
             <br> 
-
         </section>
+
+        <section>
+            <h2>What People Are Saying</h2>
+            <div id="reviews-container">
+                <!-- Reviews will be dynamically loaded here -->
+            </div>
+        </section>
+
     </main> 
 
     <footer>

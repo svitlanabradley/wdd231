@@ -119,6 +119,10 @@ nav.show {
     grid-template-rows: 1fr;
 }
 
+#openButton {
+    display: none;
+}
+
 
 
 /* ============================
@@ -249,19 +253,26 @@ h2 {
 }
 
 
+/* reviews section */
+.review-card {
+    width: 300px;
+    border: 1px solid #ddd;
+    padding: 1em;
+    margin: 1em 10px;
+    border-radius: 8px;
+    background: #f9f9f9;
+  }
+img.profile-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+
+
+
 /* ============================
    Classes Page Styles
    ============================ */
-
-
-/* .class-card {
-    background-color: var(--color-light-gray);
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    margin: 8px;
-} */
 
 #classesContainer div {
     background-color: var(--color-light-gray);
@@ -365,6 +376,7 @@ h2 {
 
 
 
+
 /* ============================
    Thank You Page Styling
    ============================ */
@@ -394,14 +406,17 @@ footer {
 }
 
 .sociallinks {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
     text-align: center;
     padding: 20px;
 }
 
 /* Social Media Icons */
-.sociallinks img {
-    width: 34px;
-    height: auto;
+.sociallinks a {
+    width: 44px;
+    height: 44px;
 }
 
 /* Footer Text */

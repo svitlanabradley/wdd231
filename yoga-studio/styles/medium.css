@@ -34,6 +34,90 @@
     }
 
 
+    /* Style for the weather button */
+    #openButton {
+        background-color: #b8bfae; /* Green background */
+        border: none; /* Remove border */
+        border-radius: 50%; /* Make the button round */
+        cursor: pointer; /* Show a pointer on hover */
+        transition: background-color 0.3s ease; /* Smooth transition for background color */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Style for the icon inside the button */
+    #openButton img {
+        width: 40px; /* Adjust the size of the icon */
+        height: 40px; /* Ensure it's square */
+        object-fit: contain; /* Ensure the icon doesn't get stretched */
+    }
+
+    /* Hover effect */
+    #openButton:hover {
+        background-color: #77997b; /* Slightly darker green on hover */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+    }
+
+    
+    /* Weather widget */
+    #modal-content {
+        position: fixed;
+        top: 0;  
+        right: 0; 
+        background-color: #f2f2f2;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+        width: 300px;
+        margin: 10px auto;
+        align-items: center;
+    }
+
+
+
+    #modal-content h3 {
+        font-size: 50px;
+        font-weight: bold;
+        margin: 10px 0;
+    }
+
+
+    #modal-content p {
+        text-transform: capitalize;
+    }
+
+    .divider {
+        height: 1px;
+        background: #b8bfae;
+        margin: 10px 0;
+    }
+
+    .line {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 15px;
+    }
+
+
+    #closeButton {
+        position: absolute;
+        top: 5px;
+        right: 15px;
+        background-color: transparent;
+        border: none;
+        font-size: 28px;
+        font-weight: bold;
+        color: #333;
+        cursor: pointer;
+        transition: transform 0.2s ease, color 0.2s ease;
+        z-index: 10;
+      }
+      
+      #closeButton:hover {
+        transform: scale(1.2);
+      }
 
 
     /* Classes Section */
@@ -126,6 +210,13 @@
     }
 
 
+    /* Reviews Section */
+    #reviews-container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+
     /* Classes Section  */
     #classesContainer div {
         grid-template-areas: 
@@ -151,7 +242,7 @@
     /* Contacts Section */
     .main-contacts {
         display: flex;
-        max-width: 1000px;
+        width: 1000px;
         gap: 20px;
         justify-content: space-around;
         padding: 40px;
